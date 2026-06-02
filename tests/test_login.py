@@ -14,4 +14,4 @@ def test_invalid_login(page):
     login_page.login(Config.INVALID_USER, Config.VALID_PASSWORD)
     
     error = login_page.get_error_message()
-    assert "locked out" in error.lower()
+    assert login_page.error_message_invalid_password in error
