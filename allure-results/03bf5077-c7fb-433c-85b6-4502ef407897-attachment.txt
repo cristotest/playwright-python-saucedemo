@@ -1,0 +1,9 @@
+Navegando a SauceDemo...
+Navegación completada
+Haciendo login con: standard_user
+Username ingresado
+Password ingresado
+Click en Login realizado
+Continuando a overview...
+En checkout overview
+TC008: Validación sin datos funciona correctamente

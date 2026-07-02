@@ -1,0 +1,7 @@
+Navegando a SauceDemo...
+Navegación completada
+Haciendo login con: standard_user
+Username ingresado
+Password ingresado
+Click en Login realizado
+TC002: Producto agregado al carrito

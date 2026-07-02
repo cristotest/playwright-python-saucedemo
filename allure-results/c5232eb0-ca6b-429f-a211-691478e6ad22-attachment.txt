@@ -1,0 +1,11 @@
+Navegando a SauceDemo...
+Navegación completada
+Haciendo login con: standard_user
+Username ingresado
+Password ingresado
+Click en Login realizado
+Llenando información: Cristopher Gaytan
+Información llenada correctamente
+Continuando a overview...
+En checkout overview
+TC009: Cálculo correcto - Total: $32.39

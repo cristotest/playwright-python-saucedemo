@@ -1,0 +1,15 @@
+Navegando a SauceDemo...
+Navegación completada
+Haciendo login con: standard_user
+Username ingresado
+Password ingresado
+Click en Login realizado
+Llenando información: Juan Perez
+Información llenada correctamente
+Continuando a overview...
+En checkout overview
+Finalizando compra...
+Compra finalizada
+Mensaje: Thank you for your order!
+Orden completada: True
+TC011: Flujo E2E completo exitoso
