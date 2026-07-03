@@ -1,5 +1,3 @@
-![Playwright](docs/images/playwright-logo.png) 
-
 # Sauce Demo - Swag Labs | Playwright y Pytest
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://www.python.org/)
@@ -22,7 +20,7 @@ Proyecto de automatización de pruebas E2E para la aplicación Sauce Demo, desar
 # Estructura del proyecto
 swags-labs-playwright/
 │
-├── pages/
+├── 📂pages/
 │   ├── base_page.py
 │   ├── cart_page.py
 │   ├── checkout_page.py
@@ -30,17 +28,17 @@ swags-labs-playwright/
 │   ├── login_page.py
 │   └── products_page.py
 │
-├── tests/
+├── 📂tests/
 │   ├── test_cart.py
 │   ├── test_checkout.py
 │   ├── test_e2e.py
 │   └── test_login.py
 │   └── test_products.py
 |
-├── reports/
+├── 📂reports/
 │   ├── report.html
 │
-├── screenshots/
+├── 📂screenshots/
 │
 ├── conftest.py
 ├── pytest.ini
