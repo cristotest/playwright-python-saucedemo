@@ -1,10 +1,6 @@
 # Sauce Demo - Swag Labs | Playwright y Pytest
 
-[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://www.python.org/)
-
-[![Playwright](https://img.shields.io/badge/Playwright-1.57-green?logo=playwright)](https://playwright.dev/python/)
-
-[![Pytest](https://img.shields.io/badge/Pytest-9.0-red?logo=pytest)](https://docs.pytest.org/)
+[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://www.python.org/) [![Playwright](https://img.shields.io/badge/Playwright-1.57-green?logo=playwright)](https://playwright.dev/python/) [![Pytest](https://img.shields.io/badge/Pytest-9.0-red?logo=pytest)](https://docs.pytest.org/)
 
 Proyecto de automatización de pruebas E2E para la aplicación Sauce Demo, desarrollado con Playwright, Python y Pytest.
 
