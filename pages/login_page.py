@@ -1,32 +1,42 @@
-class LoginPage:
+from pages.base_page import BasePage
+
+class LoginPage(BasePage):
+    """Page Object para la página de login de SauceDemo"""
     
-    username_input_selector = "#user-name"
-    password_input_selector = "#password"
-    login_button_selector = "#login-button"
-    error_message_selector = "[data-test='error']"
-    
-    error_message_username_required = "Epic sadface: Username is required"
-    error_message_password_required = "Epic sadface: Password is required"
-    error_message_locked_user = "Epic sadface: Sorry, this user has been locked out."
-    error_message_invalid_credentials = "Epic sadface: Username and password do not match any user in this service"
-    
+    USERNAME_INPUT = "#user-name"
+    PASSWORD_INPUT = "#password"
+    LOGIN_BUTTON = "#login-button"
+    ERROR_MESSAGE = "[data-test='error']"
     
     def __init__(self, page):
-        self.page = page
+        super().__init__(page)
+        self.url = "https://www.saucedemo.com"
+    
+    def navigate(self):
+        print("Navegando a SauceDemo...")
+        self.go_to(self.url)
+        print("Navegación completada")
+    
+    def login(self, username: str, password: str):
+        print(f"Haciendo login con: {username}")
+        self.fill(self.USERNAME_INPUT, username)
+        print("Username ingresado")
         
-    def navigate(self, url):
-        self.page.goto(url)
+        self.fill(self.PASSWORD_INPUT, password)
+        print("Password ingresado")
         
-    def set_username(self,username:str):
-        self.page.get_by_role("textbox", name="Username").fill(username)
-        
-    def accept_login(self):
-        self.page.get_by_role("button", name="Login").click()
-        
-    def login(self, username, password):
-        self.set_username(username=username)
-        self.page.get_by_role("textbox", name="Password").fill(password)
-        self.accept_login()
-        
-    def get_error_message(self):
-        return self.page.text_content("[data-test='error']")
+        self.click(self.LOGIN_BUTTON)
+        print("Click en Login ejecutado")
+    
+    def get_error_message(self) -> str:
+        """Returna el mensaje de error si el login falla"""
+        return self.get_text(self.ERROR_MESSAGE)
+    
+    def is_login_successful(self) -> bool:
+        """Verifies successful login"""
+        print("Verificando login exitoso...")
+        result = "/inventory.html" in self.page.url
+        print(f"URL actual: {self.page.url}")
+        print(f"Login exitoso: {result}")
+        return result
+    

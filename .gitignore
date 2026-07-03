@@ -6,9 +6,6 @@ __pycache__/
 .venv/
 venv/
 
-# PyCharm
-.idea/
-
 # Playwright
 .playwright/
 test-results/
