@@ -18,6 +18,7 @@ Proyecto de automatización de pruebas E2E para la aplicación Sauce Demo, desar
 
 
 # Estructura del proyecto
+'''
 swags-labs-playwright/
 │
 ├── 📂pages/
@@ -45,7 +46,7 @@ swags-labs-playwright/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
+'''
 
 
 # Implementaciones a futuro
